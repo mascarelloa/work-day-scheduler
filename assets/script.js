@@ -17,7 +17,7 @@ $(document).ready(function () {
     function trackTime() {
 
         $(".block").each(function () {
-            var hour = moment("4/2/2021 14:00").format("HH");
+            var hour = moment("").format("HH");
             var hourBlock = $(this).attr("id");
 
             if (hour > hourBlock) {
