@@ -17,7 +17,7 @@ $(document).ready(function () {
     function trackTime() {
 
         $(".block").each(function () {
-            var hour = moment("").format("HH");
+            var hour = moment().format("HH");
             var hourBlock = $(this).attr("id");
 
             if (hour > hourBlock) {
@@ -35,7 +35,7 @@ $(document).ready(function () {
 
 }) 
 
-//this will still append the saved input in local storage to the page when it is reloaded.
+//this will still append the saved input in local storage to the page when it is 
 function init() {
     $("#09 .description").val(localStorage.getItem("09"));
     $("#10 .description").val(localStorage.getItem("10"));
